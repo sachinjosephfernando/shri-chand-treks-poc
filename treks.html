@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Treks — Shri Chand Treks (POC)</title>
+  <meta name="description" content="Browse treks and road trips in Uttarakhand and Himachal Pradesh.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span>Shri Chand Treks</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample07">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="treks.html">Treks</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="ms-lg-3 d-grid gap-2 d-lg-flex">
+        <a class="btn btn-sm btn-brand" href="contact.html">Enquire / Book</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<section class="py-5">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-end gap-2">
+      <div>
+        <h1 class="section-title mb-1">Treks & Trips</h1>
+        <div class="small-muted">Browse all offerings. For this proof-of-concept, some prices are marked “On request” where source documents didn’t include a fixed rate.</div>
+      </div>
+      <div class="d-flex gap-2">
+        <select class="form-select form-select-sm" id="filterRegion" style="width:auto">
+          <option value="all">All regions</option>
+          <option value="Uttarakhand">Uttarakhand</option>
+          <option value="Himachal Pradesh">Himachal Pradesh</option>
+        </select>
+        <select class="form-select form-select-sm" id="filterType" style="width:auto">
+          <option value="all">All types</option>
+          <option value="Trek">Trek</option>
+          <option value="Road Trip">Road Trip</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2" id="trekGrid">
+      <div class='col' data-region='Himachal Pradesh' data-type='Road Trip'>
+      <div class="card h-100 shadow-sm">
+        <img src="https://source.unsplash.com/1600x900/?spiti,himachal,mountains" class="card-img-top" alt="Spiti Valley Road Trip">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="card-title mb-1">Spiti Valley Road Trip</h5>
+            <div class="text-end">
+              <div class="fw-semibold">₹46,500</div>
+              <div class="small-muted" style="font-size:0.82rem;">per person</div>
+            </div>
+          </div>
+          <div class="trek-meta mt-2">
+            <div><span class="small-muted">Region:</span> Himachal Pradesh</div>
+            <div><span class="small-muted">Duration:</span> 9 days · <span class="small-muted">Difficulty:</span> Road Trip</div>
+            <div><span class="small-muted">Max altitude:</span> 4450 m</div>
+          </div>
+          <div class="mt-2"><span class='tag'>Monasteries</span><span class='tag'>High desert</span><span class='tag'>Trans-Himalayan</span></div>
+          <p class="card-text mt-2">Spite is tucked away in a far corner of HP on the wrong side of the great Himalayas and is often called “Little Tibet” or “Mini Ladakh.</p>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+          <a class="btn btn-sm btn-brand" href="treks/spiti-raod-trip.html">View details</a>
+        </div>
+      </div>
+    </div>
+<div class='col' data-region='Uttarakhand' data-type='Trek'>
+      <div class="card h-100 shadow-sm">
+        <img src="https://source.unsplash.com/1600x900/?himalayas,meadow" class="card-img-top" alt="Dayara Bugyal Trek">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="card-title mb-1">Dayara Bugyal Trek</h5>
+            <div class="text-end">
+              <div class="fw-semibold">On request</div>
+              <div class="small-muted" style="font-size:0.82rem;">per person</div>
+            </div>
+          </div>
+          <div class="trek-meta mt-2">
+            <div><span class="small-muted">Region:</span> Uttarakhand</div>
+            <div><span class="small-muted">Duration:</span> 5 days · <span class="small-muted">Difficulty:</span> Moderate</div>
+            <div><span class="small-muted">Max altitude:</span> 3350 m</div>
+          </div>
+          <div class="mt-2"><span class='tag'>Meadows</span><span class='tag'>Great for first-timers</span><span class='tag'>Winter/Spring</span></div>
+          <p class="card-text mt-2">This moderate trek starts from the picturesque village of Barsu in Uttarkashi. Barsu serves as the base for the Dayara Bugyal trek along with offering grand views of some 6000m plu…</p>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+          <a class="btn btn-sm btn-brand" href="treks/dayara-bugyal-trek.html">View details</a>
+        </div>
+      </div>
+    </div>
+<div class='col' data-region='Uttarakhand' data-type='Trek'>
+      <div class="card h-100 shadow-sm">
+        <img src="https://source.unsplash.com/1600x900/?forest,trail,himalayas" class="card-img-top" alt="Dodital – Darwa Pass Trek">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="card-title mb-1">Dodital – Darwa Pass Trek</h5>
+            <div class="text-end">
+              <div class="fw-semibold">On request</div>
+              <div class="small-muted" style="font-size:0.82rem;">per person</div>
+            </div>
+          </div>
+          <div class="trek-meta mt-2">
+            <div><span class="small-muted">Region:</span> Uttarakhand</div>
+            <div><span class="small-muted">Duration:</span> 5 days · <span class="small-muted">Difficulty:</span> Moderate</div>
+            <div><span class="small-muted">Max altitude:</span> 4450 m</div>
+          </div>
+          <div class="mt-2"><span class='tag'>Dodital lake</span><span class='tag'>Pass climb</span><span class='tag'>Moderate</span></div>
+          <p class="card-text mt-2">This is a classic trek for first-timers keen to discover the outdoors and experience the mighty Himalayas at high altitude.</p>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+          <a class="btn btn-sm btn-brand" href="treks/darwa-pass.html">View details</a>
+        </div>
+      </div>
+    </div>
+<div class='col' data-region='Uttarakhand' data-type='Trek'>
+      <div class="card h-100 shadow-sm">
+        <img src="https://source.unsplash.com/1600x900/?alpine,meadow,himalayas" class="card-img-top" alt="Kush Kalyan Trek">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="card-title mb-1">Kush Kalyan Trek</h5>
+            <div class="text-end">
+              <div class="fw-semibold">On request</div>
+              <div class="small-muted" style="font-size:0.82rem;">per person</div>
+            </div>
+          </div>
+          <div class="trek-meta mt-2">
+            <div><span class="small-muted">Region:</span> Uttarakhand</div>
+            <div><span class="small-muted">Duration:</span> 5 days · <span class="small-muted">Difficulty:</span> Beginner</div>
+            <div><span class="small-muted">Max altitude:</span> 3710 m</div>
+          </div>
+          <div class="mt-2"><span class='tag'>Alpine meadow</span><span class='tag'>Short trek</span><span class='tag'>Beginner</span></div>
+          <p class="card-text mt-2">Kush Kalyan" is a (Himalayan Alpine Meadow) in the Tehri Garhwal district of Uttarakhand, India.</p>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+          <a class="btn btn-sm btn-brand" href="treks/kush-kalyan-trek.html">View details</a>
+        </div>
+      </div>
+    </div>
+<div class='col' data-region='Uttarakhand' data-type='Trek'>
+      <div class="card h-100 shadow-sm">
+        <img src="https://source.unsplash.com/1600x900/?mountain,meadow" class="card-img-top" alt="Panwali Kantha Trek">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="card-title mb-1">Panwali Kantha Trek</h5>
+            <div class="text-end">
+              <div class="fw-semibold">₹21,000</div>
+              <div class="small-muted" style="font-size:0.82rem;">per person</div>
+            </div>
+          </div>
+          <div class="trek-meta mt-2">
+            <div><span class="small-muted">Region:</span> Uttarakhand</div>
+            <div><span class="small-muted">Duration:</span> 5 days · <span class="small-muted">Difficulty:</span> Moderate</div>
+            <div><span class="small-muted">Max altitude:</span> 3960 m</div>
+          </div>
+          <div class="mt-2"><span class='tag'>Beginner-friendly</span><span class='tag'>Chaukhamba views</span><span class='tag'>Meadows</span></div>
+          <p class="card-text mt-2">Panwali Kantha is an ideal trek for first-timers, one that kindles a certain interest & passion for the mountains.</p>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+          <a class="btn btn-sm btn-brand" href="treks/panwali-kantha-trek.html">View details</a>
+        </div>
+      </div>
+    </div>
+<div class='col' data-region='Uttarakhand' data-type='Trek'>
+      <div class="card h-100 shadow-sm">
+        <img src="https://source.unsplash.com/1600x900/?mountain,peak,trek" class="card-img-top" alt="Chari Top Trek">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="card-title mb-1">Chari Top Trek</h5>
+            <div class="text-end">
+              <div class="fw-semibold">On request</div>
+              <div class="small-muted" style="font-size:0.82rem;">per person</div>
+            </div>
+          </div>
+          <div class="trek-meta mt-2">
+            <div><span class="small-muted">Region:</span> Uttarakhand</div>
+            <div><span class="small-muted">Duration:</span> 6 days · <span class="small-muted">Difficulty:</span> Moderate Height</div>
+            <div><span class="small-muted">Max altitude:</span> 3810 m</div>
+          </div>
+          <div class="mt-2"><span class='tag'>Summit hike</span><span class='tag'>Forest trails</span><span class='tag'>Moderate</span></div>
+          <p class="card-text mt-2">Guided itinerary with local expertise, meals & camp support.</p>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+          <a class="btn btn-sm btn-brand" href="treks/chari-top-trek-introduction.html">View details</a>
+        </div>
+      </div>
+    </div>
+<div class='col' data-region='Uttarakhand' data-type='Trek'>
+      <div class="card h-100 shadow-sm">
+        <img src="https://source.unsplash.com/1600x900/?himalayan,valley" class="card-img-top" alt="Har Ki Dun Trek">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="card-title mb-1">Har Ki Dun Trek</h5>
+            <div class="text-end">
+              <div class="fw-semibold">On request</div>
+              <div class="small-muted" style="font-size:0.82rem;">per person</div>
+            </div>
+          </div>
+          <div class="trek-meta mt-2">
+            <div><span class="small-muted">Region:</span> Uttarakhand</div>
+            <div><span class="small-muted">Duration:</span> 7 days · <span class="small-muted">Difficulty:</span> Moderate</div>
+            <div><span class="small-muted">Max altitude:</span> 3350 m</div>
+          </div>
+          <div class="mt-2"><span class='tag'>Valley trek</span><span class='tag'>Culture</span><span class='tag'>Moderate</span></div>
+          <p class="card-text mt-2">Guided itinerary with local expertise, meals & camp support.</p>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+          <a class="btn btn-sm btn-brand" href="treks/har-ki-dun-trek.html">View details</a>
+        </div>
+      </div>
+    </div>
+<div class='col' data-region='Uttarakhand' data-type='Trek'>
+      <div class="card h-100 shadow-sm">
+        <img src="https://source.unsplash.com/1600x900/?alpine,lake,trek" class="card-img-top" alt="Maldaru Lake Trek">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="card-title mb-1">Maldaru Lake Trek</h5>
+            <div class="text-end">
+              <div class="fw-semibold">₹42,750</div>
+              <div class="small-muted" style="font-size:0.82rem;">per person</div>
+            </div>
+          </div>
+          <div class="trek-meta mt-2">
+            <div><span class="small-muted">Region:</span> Uttarakhand</div>
+            <div><span class="small-muted">Duration:</span> 7 days · <span class="small-muted">Difficulty:</span> Demanding Height</div>
+            <div><span class="small-muted">Max altitude:</span> 4370 m</div>
+          </div>
+          <div class="mt-2"><span class='tag'>Offbeat</span><span class='tag'>High altitude lake</span><span class='tag'>Demanding</span></div>
+          <p class="card-text mt-2">The Maldaru Lake Trek is a beautiful, offbeat trekking destination located in the Uttarkashi district of Uttarakhand, India.</p>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+          <a class="btn btn-sm btn-brand" href="treks/maldaru-lake-trek.html">View details</a>
+        </div>
+      </div>
+    </div>
+<div class='col' data-region='Uttarakhand' data-type='Trek'>
+      <div class="card h-100 shadow-sm">
+        <img src="https://source.unsplash.com/1600x900/?mountain,lake,himalayas" class="card-img-top" alt="Ruinsara Lake Trek">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="card-title mb-1">Ruinsara Lake Trek</h5>
+            <div class="text-end">
+              <div class="fw-semibold">On request</div>
+              <div class="small-muted" style="font-size:0.82rem;">per person</div>
+            </div>
+          </div>
+          <div class="trek-meta mt-2">
+            <div><span class="small-muted">Region:</span> Uttarakhand</div>
+            <div><span class="small-muted">Duration:</span> 7 days · <span class="small-muted">Difficulty:</span> Moderate</div>
+            <div><span class="small-muted">Max altitude:</span> 3550 m</div>
+          </div>
+          <div class="mt-2"><span class='tag'>Remote lake</span><span class='tag'>Alpine scenery</span><span class='tag'>Moderate</span></div>
+          <p class="card-text mt-2">The Tons valley is situated in the western ranges of the Garhwal Himalaya in Uttarakhand amidst thick deodar and pine forest and is a relatively unspoiled area.</p>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+          <a class="btn btn-sm btn-brand" href="treks/ruinsara-lake-trek.html">View details</a>
+        </div>
+      </div>
+    </div>
+<div class='col' data-region='Uttarakhand' data-type='Trek'>
+      <div class="card h-100 shadow-sm">
+        <img src="https://source.unsplash.com/1600x900/?glacier,mountains" class="card-img-top" alt="Gaumukh Tapovan Trek (Source of the Ganga)">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="card-title mb-1">Gaumukh Tapovan Trek (Source of the Ganga)</h5>
+            <div class="text-end">
+              <div class="fw-semibold">₹36,500</div>
+              <div class="small-muted" style="font-size:0.82rem;">per person</div>
+            </div>
+          </div>
+          <div class="trek-meta mt-2">
+            <div><span class="small-muted">Region:</span> Uttarakhand</div>
+            <div><span class="small-muted">Duration:</span> 8 days · <span class="small-muted">Difficulty:</span> Challenging</div>
+            <div><span class="small-muted">Max altitude:</span> 4500 m</div>
+          </div>
+          <div class="mt-2"><span class='tag'>Gaumukh Glacier</span><span class='tag'>High altitude</span><span class='tag'>Challenging</span></div>
+          <p class="card-text mt-2">One of the most scenic treks in India, in an area which has attracted people for centuries.</p>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+          <a class="btn btn-sm btn-brand" href="treks/tapovantrek-suorce-ofganga.html">View details</a>
+        </div>
+      </div>
+    </div>
+<div class='col' data-region='Uttarakhand' data-type='Trek'>
+      <div class="card h-100 shadow-sm">
+        <img src="https://source.unsplash.com/1600x900/?himalayan,valley,trek" class="card-img-top" alt="Har Ki Dun + Ruinsara Lake Trek">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="card-title mb-1">Har Ki Dun + Ruinsara Lake Trek</h5>
+            <div class="text-end">
+              <div class="fw-semibold">₹25,600</div>
+              <div class="small-muted" style="font-size:0.82rem;">per person</div>
+            </div>
+          </div>
+          <div class="trek-meta mt-2">
+            <div><span class="small-muted">Region:</span> Uttarakhand</div>
+            <div><span class="small-muted">Duration:</span> 8 days · <span class="small-muted">Difficulty:</span> Moderate</div>
+            <div><span class="small-muted">Max altitude:</span> 3650 m</div>
+          </div>
+          <div class="mt-2"><span class='tag'>Valley trek</span><span class='tag'>Lakes</span><span class='tag'>Moderate</span></div>
+          <p class="card-text mt-2">The Tons valley is situated in the western ranges of the Garhwal Himalaya in Uttarakhand amidst thick deodar and pine forest and is a relatively unspoiled area.</p>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+          <a class="btn btn-sm btn-brand" href="treks/har-ki-dun-ruinsara-lak-trek.html">View details</a>
+        </div>
+      </div>
+    </div>
+<div class='col' data-region='Uttarakhand' data-type='Trek'>
+      <div class="card h-100 shadow-sm">
+        <img src="https://source.unsplash.com/1600x900/?snow,mountains,trek" class="card-img-top" alt="Kuari Pass Trek">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="card-title mb-1">Kuari Pass Trek</h5>
+            <div class="text-end">
+              <div class="fw-semibold">₹25,500</div>
+              <div class="small-muted" style="font-size:0.82rem;">per person</div>
+            </div>
+          </div>
+          <div class="trek-meta mt-2">
+            <div><span class="small-muted">Region:</span> Uttarakhand</div>
+            <div><span class="small-muted">Duration:</span> 8 days · <span class="small-muted">Difficulty:</span> Moderate</div>
+            <div><span class="small-muted">Max altitude:</span> 3835 m</div>
+          </div>
+          <div class="mt-2"><span class='tag'>Snow views</span><span class='tag'>Curzon trail</span><span class='tag'>Moderate</span></div>
+          <p class="card-text mt-2">The pass is probably the best window to view the high Himalayan peaks. The views are simply breathtaking, facing north the vision sweeps from the gorges of Trishul in the east to t…</p>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+          <a class="btn btn-sm btn-brand" href="treks/kuari-pass-trek.html">View details</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const region = document.getElementById('filterRegion');
+  const type = document.getElementById('filterType');
+  const cards = Array.from(document.querySelectorAll('#trekGrid > .col'));
+  function apply() {
+    const r = region.value;
+    const t = type.value;
+    cards.forEach(c => {
+      const okR = (r === 'all') || (c.dataset.region === r);
+      const okT = (t === 'all') || (c.dataset.type === t);
+      c.style.display = (okR && okT) ? '' : 'none';
+    });
+  }
+  region.addEventListener('change', apply);
+  type.addEventListener('change', apply);
+});
+</script>
+
+
+<footer class="py-4 mt-5">
+  <div class="container">
+    <div class="row gy-3">
+      <div class="col-md-6">
+        <div class="fw-semibold">Shri Chand Treks</div>
+        <div class="small-muted">Guided Himalayan treks from Dehradun (Uttarakhand & Himachal Pradesh).</div>
+        <div class="small-muted mt-2">Phone / WhatsApp: <a href="https://wa.me/919410553375" target="_blank" rel="noopener">+91 9410553375</a></div>
+        <div class="small-muted">Email: <a href="mailto:info@wanderlandadventures.in">info@wanderlandadventures.in</a></div>
+      </div>
+      <div class="col-md-6">
+        <div class="fw-semibold">Quick links</div>
+        <div class="small-muted"><a href="treks.html">Treks</a> · <a href="pricing.html">Pricing</a> · <a href="policies.html">Policies</a></div>
+        <div class="small-muted mt-2">© <span data-current-year></span> · Proof-of-concept website (content & images to be finalised).</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
